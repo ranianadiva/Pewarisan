@@ -1,0 +1,51 @@
+package pewarisan;
+
+public class A {
+
+    private int a;
+
+    public void setA(int nilai) {
+        a = nilai;
+    }
+
+    public int getA() {
+        return a;
+    }
+
+    public void tampilkanNilai() {
+        System.out.println("Nilai a : " + getA());
+    }
+}
+
+package pewarisan;
+
+public class B extends A {
+
+    private int b;
+
+    public void setB(int nilai) {
+        b = nilai;
+    }
+
+    public int getB() {
+        return b;
+    }
+
+    public void tampilkanNilai() {
+        super.tampilkanNilai(); //memanggil dari method di class A
+        System.out.println("Nilai b : " + getB());
+    }
+}
+
+
+package pewarisan;
+
+public class DemoOverride2 {
+
+    public static void main(String[] args) {
+        B objek = new B();
+        objek.setA(20);
+        objek.setB(150);
+        objek.tampilkanNilai();
+    }
+}
