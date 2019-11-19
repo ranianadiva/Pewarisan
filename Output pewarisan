@@ -1,0 +1,52 @@
+# Pewarisan
+Latihan 1
+nilai b : 8
+Method ini hanya untuk anaknya : 
+a = 10
+Dipanggil pada = pewarisan.Kedua
+a = 10
+Dipanggil pada = pewarisan.Kedua
+Method ini hanya untuk anaknya : 
+a = 10
+Dipanggil pada = pewarisan.Pertama
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+Latihan 2
+No. Karyawan : 12345678
+Nama : Yanto
+Usia : 32
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+Latihan 3
+The class Method in Hewan  
+The instance Method in Hewan 
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+Latihan 4
+Nilai a : 20
+Nilai b : 150
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+Latihan 5
+mulai berjalan
+gear 0
+speed 0
+gear2
+speed 2
+gear 2
+speed 2
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+Latihan 6
+1. 7
+2. a<3> +  b<4> =7
+3. 15
+4. 14.5
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+Tugas Praktikum 
+Nama siswa  : rania
+No. Absen : 37
+Nama : matematika 
+Jam pelajaran 8
+BUILD SUCCESSFUL (total time: 0 seconds)
