@@ -1,0 +1,66 @@
+package pewarisan;
+
+public class Truck {
+
+    //truck mempunyai 3 fields 
+    public int cadence;
+    public int gear;
+    public int speed;
+
+    public Truck(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+
+    public void setCadence(int newValue) {
+        cadence = newValue;
+    }
+
+    public void setGear(int newValue) {
+        gear = newValue;
+    }
+
+    public void applybrake(int decrement) {
+        speed = decrement;
+    }
+
+    public void speedUp(int increment) {
+        speed = increment;
+    }
+
+}
+
+
+package pewarisan;
+
+public class MontainTruck extends Truck {
+
+    public int seatHeight;
+
+    public MontainTruck(int startCadence, int startSpeed, int startGear, int startHeight) {
+        super(startCadence, startSpeed, startGear);
+        seatHeight = startHeight;
+
+    }
+
+    public void setHeight(int newValue) {
+        seatHeight = newValue;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("mulai berjalan");
+        MontainTruck MB = new MontainTruck(0, 0, 0, 0);
+        System.out.println("gear " + MB.gear);
+        System.out.println("speed " + MB.speed);
+        MB.setGear(2);
+        MB.speedUp(2);
+        System.out.println("gear" + MB.gear);
+        System.out.println("speed " + MB.speed);
+        MB.speedUp(2);
+        System.out.println("gear " + MB.gear);
+        System.out.println("speed " + MB.speed);
+    }
+}
+
+
