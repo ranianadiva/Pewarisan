@@ -1,0 +1,76 @@
+
+package pewarisan;
+
+
+public class Sekolah {
+    private String mapel;
+    private int jampelajaran;
+    
+    //konstruktor
+    public Sekolah (String mapel, int jampelajaran){
+    this.mapel = mapel;
+    this.jampelajaran = jampelajaran;
+    
+    }
+    //metode
+    public void info(){
+        System.out.println("Nama : " + this.mapel);
+        System.out.println("Jam pelajaran " + this.jampelajaran);
+    }
+}
+
+
+package pewarisan;
+
+
+public class Guru extends Sekolah {
+    
+private int Noabsen;
+String mapel;
+int jampelajaran;
+    
+    public Guru(String mapel, int jampelajaran, int Noabsen) {
+        super(mapel, jampelajaran);
+        this.Noabsen = Noabsen;
+    }
+    
+        public void info() {
+        System.out.println("No. Absen : " + this.Noabsen);
+        super.info();
+    }
+    
+}
+
+
+package pewarisan;
+
+
+public class Siswa extends Guru{
+    private String namasiswa;
+    String mapel;
+    int jampelajaran;
+    int Noabsen;
+
+    public Siswa(String mapel, int jampelajaran, int Noabsen, String namasiswa) {
+        super(mapel, jampelajaran, Noabsen);
+        this.namasiswa = namasiswa;
+    }
+    
+    public void info() {
+        System.out.println("Nama siswa  : " + this.namasiswa);
+        super.info();
+}      
+    }
+
+
+package pewarisan;
+
+
+public class Panggil {
+
+    public static void main(String[] args) {
+        Siswa myGuru = new Siswa("matematika ", 8, 37, "rania");
+        myGuru.info();
+        
+    }
+}
