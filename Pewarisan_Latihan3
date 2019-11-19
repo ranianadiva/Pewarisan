@@ -1,0 +1,36 @@
+package pewarisan;
+
+public class Hewan {
+
+    public static void testClassmethod() {
+        System.out.println("The class Method in Hewan  ");
+    }
+
+    public void testInstanceMethod() {
+        System.out.println("The instance Method in Hewan ");
+    }
+}
+
+package pewarisan;
+
+public class Gajah extends Hewan {
+
+    public static void testClassMethod() {
+        System.out.println("The class method in Hewan ");
+    }
+
+    //mengoverride method pada class Animal
+    public void testInstanceMethod() {
+        System.out.println("The Instance method in Gajah ");
+    }
+
+    public static void main(String[] args) {
+        Gajah myGajah = new Gajah();
+        Hewan myHewan = new Hewan();
+        Hewan.testClassmethod();
+        myHewan.testInstanceMethod();
+    }
+}
+
+
+
